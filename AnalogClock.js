@@ -1,5 +1,3 @@
-const AnalogClock = $container => {
-  // do something!
-};
+const AnalogClock = ($container) => {};
 
 export default AnalogClock;
