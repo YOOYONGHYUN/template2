@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 300;
   background-color: #d6e1e5;
 }
@@ -24,7 +24,7 @@ body {
   box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1);
 }
 .analog-clock::after {
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   position: absolute;
