@@ -1,9 +1,6 @@
 const AnalogClock = ($container) => {
   //class를 사용할 때는 인덱스를 꼭 넣자.
 
-  console.log($container);
-  let c = document.createElement("span");
-
   for (let i = 0; i < 15; i++) {
     let div = document.createElement("div");
     if (i <= 2) {
@@ -32,7 +29,7 @@ const AnalogClock = ($container) => {
     let hh = day.getHours() * 30;
     let mm = day.getMinutes() * deg;
     let ss = day.getSeconds() * deg;
-    hand[0].style.setProperty("--deg", hh);
+    hand[0].style.setProperty("--deg", hh + mm / 12);
     hand[1].style.setProperty("--deg", mm);
     hand[2].style.setProperty("--deg", ss);
   }, 1000);
